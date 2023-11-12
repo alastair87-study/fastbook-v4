@@ -2,11 +2,14 @@ name: fastbook
 channels:
     - fastai
     - pytorch
+    - nvidia
     - defaults
 dependencies:
+  - cuda-nvcc
   - python>=3.6
-  - pytorch>=1.6
+  - pytorch-cuda>=1.6
   - torchvision
+  - jupyter
   - pip
   - pip:
     - -r requirements.txt
